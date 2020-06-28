@@ -8,7 +8,7 @@ Thread thread2;
 
 Serial pc(USBTX,USBRX); //tx,rx
 
-Serial uart(D12,D11); //tx,rx
+Serial uart(D1,D0); //tx,rx
 
 DigitalIn button(SW2);
 
@@ -61,6 +61,10 @@ int main(){
 
    thread1.start(send_thread);
 
+   //send_thread();
+
    thread2.start(recieve_thread);
+
+   //recieve_thread();
 
 }
