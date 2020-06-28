@@ -16,7 +16,13 @@ int main(){
 
             char recv = uart.getc();
 
+            //float r = (float)recv;
+
             pc.putc(recv);
+
+            //pc.printf("\n");
+
+            //pc.printf("%f\n", r);
 
       }
 
